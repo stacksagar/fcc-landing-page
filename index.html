@@ -1,0 +1,167 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+ @import 'https://fonts.googleapis.com/css?family=Roboto';
+
+
+ body {
+ background: #ddd;
+}
+
+html {
+ scroll-behavior: smooth;
+}
+
+* {
+ font-family: consolas, tahoma, arial;
+ margin: 0px;
+ padding: 0px;
+}
+
+#header {
+ padding-right: 30px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ position: sticky;
+ top: 0px;
+ left: 0px;
+ width: 100%;
+ height: 60px;
+ background: #eeeeee;
+}
+
+#header-img {
+ width: 200px;
+}
+
+.nav-link {
+ margin: 0px 8px;
+ text-decoration: none;
+}
+
+#videoWrapper {
+ width: 500px;
+ margin: 30px auto;
+ text-align: center;
+}
+
+#videoWrapper iframe {
+ width: 100%;
+ border-radius: 10px;
+ margin: auto;
+}
+
+#shop { 
+ display: flex;  
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+#shop img {
+ width: 400px;
+ height: 350px;
+ border-radius: 20px;
+ background: #ffffff;
+ margin: 10px;
+}
+
+#form {
+ padding: 100px 0px;
+ text-align: center;
+ background: #0000000a;
+}
+
+#form input {
+ display: block;
+ box-sizing: border-box;
+ width: 500px;
+ padding: 12px;
+ border-radius: 5px;
+ margin: 10px auto;
+ outline: transparent;
+ border: transparent;
+ font-size: 1rem;
+}
+
+input:focus {
+ outline: transparent;
+ border: transparent;
+}
+
+#form #submit {
+ background: #e50575;
+ cursor: pointer;
+ color: #ffffff;
+ border: 5px solid transparent;
+}
+
+#submit:hover {
+ background: #e50523;
+}
+
+#submit:focus {
+ border: 5px solid #ffffff15 !important;
+}
+
+
+
+@media only screen and (max-width:600px) {
+ #videoWrapper {
+  width: 90%;
+  margin: 30px auto;
+ }  
+ #shop {
+  padding:100px 0px;
+ }
+ #shop img {
+  width: 90%;
+  margin: 10px auto;
+ }
+
+ #form input {
+  width: 85%;
+  margin: 10px auto;
+ }
+}
+</style>
+
+
+<header id="header">
+ <img src="https://www.freelogodesign.org/Content/img/logo-colors-meanings/logos-oranges/logo-fld04.svg" alt="refresh"
+  id="header-img">
+
+ <nav id="nav-bar">
+  <a href="#video" class="nav-link">Video</a>
+  <a href="#shop" class="nav-link">Products</a>
+  <a href="#form" class="nav-link">Subscribe</a>
+ </nav>
+
+</header>
+
+<div id="videoWrapper">
+ <iframe id="video" height="315" src="https://www.youtube.com/embed/oMw21WF71U8" frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen></iframe>
+</div>
+<br><br>
+
+<div id="shop">
+ <h1>Products</h1><br>
+ <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Oe1FtklcF7UOhZhOIwtCfdK4G_4InmYkzg&usqp=CAU" alt="">
+ <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR91ms1UJEGxXaAdLSNAbhVXuq3VVpOrMWL1w&usqp=CAU" alt="">
+ <img
+  src="https://images.unsplash.com/photo-1526947425960-945c6e72858f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
+  alt="">
+ <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3JGDg5ga5hDl_ehaEQomXO37X_t2ItjRHnQ&usqp=CAU" alt="">
+</div>
+
+<form action="https://www.freecodecamp.com/email-submit" id="form">
+ <input id="email" type="email" name="email" placeholder="Enter your email">
+ <input type="submit" id="submit" value="Subscribe">
+</form>
+
+
+  <div class=grid>
+
+   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
